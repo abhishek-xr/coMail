@@ -1,2 +1,0 @@
-# coMail
-CoPilot email app
