@@ -1,29 +1,74 @@
-# Create T3 App
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+# Overview
 
-## What's next? How do I make an app with this?
+A full-stack app where we build and deploy a fully featured AI powered email client using NextJS 14. The application also includes a subscription feature, where users can subscribe to access premium features. The subscription process is handled using Stripe for payments and webhooks for event processing. Using Aurinko API for Mail Integration. 
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+# Technologies and Frameworks
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Clerk
+- Prisma ORM
+- PostgreSQL
+- AWS SDK
+- OpenAI API
+- Stripe
+- Axios
+- Pinecone
+- OpenAI Edge
+- Neon Database Serverless
+- @tanstack/react-query
+- @clerk/nextjs
+- clsx
+- tailwind-merge
 
-## Learn More
+# Installation
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+Follow the steps below to install and setup the project:
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+1. **Clone the repository**
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+   Open your terminal and run the following command:
 
-## How do I deploy this?
+   ```bash
+   git clone https://github.com/abhishek-xr/comail.git
+   ```
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+2. **Navigate to the project directory**
+
+   ```bash
+   cd reminders-next
+   ```
+
+3. **Install Node.js**
+
+   The project requires Node.js version 13.4.19 or later. You can download it from [here](https://nodejs.org/en/download/).
+
+4. **Install the required dependencies**
+
+   Run the following command to install all the required dependencies:
+
+   ```bash
+   npm install
+   ```
+
+   This will install all the dependencies listed in the `package.json` file, including Next.js, React, React DOM, Axios, Stripe, Tailwind CSS, and other specific dependencies such as "@aws-sdk/client-s3" and "@clerk/nextjs".
+
+5. **Setup environment variables**
+
+    Create a `.env` file in the root directory of your project and add the required environment variables.
+
+6. **Run the project**
+
+    Now, you can run the project using the following command:
+
+    ```bash
+    npm run dev
+    ```
+
+    Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+
